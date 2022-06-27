@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
-const Subscribe = () => {
+export function Subscribe() {
     const navigate = useNavigate();
 
     const [name, setName] = useState('');
